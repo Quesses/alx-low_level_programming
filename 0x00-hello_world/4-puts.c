@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Return : 0 after printing with the funtion
+ * Return: 0 after printing with the funtion
  */
 int main(void)
 {
