@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints the standard error sandwiched around the standard outpu/t
  *
  * Return: 1 , print to standard error
  */
