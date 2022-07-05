@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+#include "main.h"
+	putchar ('\n');
 	return (0);
 }
