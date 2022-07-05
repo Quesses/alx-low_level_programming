@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Prints the alphabets in lowercase followed by uppercase
  *
@@ -8,7 +7,6 @@
 int main(void)
 {
 	int ch;
-	
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
@@ -19,5 +17,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }

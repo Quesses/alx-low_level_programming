@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Print all the single digits of base 10 using the putchar function
  *
@@ -14,5 +13,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }
