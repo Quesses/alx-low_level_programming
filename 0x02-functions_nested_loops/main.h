@@ -1,11 +1,6 @@
+int _putchar(char c);
 /**
  * main - header prototype
+ * prints _putchar
  *
- * return: Always 0 (Success)
  */
-int ch = "_putchar";
-
-{
-	putchar (ch);
-	return (0);
-}
