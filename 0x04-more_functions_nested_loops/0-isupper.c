@@ -7,8 +7,10 @@
  * Return: 0 on failure
  */
 
-int _isupper(int c)
+int main(void)
 {
+	int c;
+
 	if (c >= 65 && c <= 90)
 	{
 		return (1);
