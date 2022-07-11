@@ -3,6 +3,7 @@
 
 /**
  * _islower - checks if a character is lowercase.
+ * @c: character inputed.
  *
  * Return: returns 1 on Success (lowercase), 0 on failure (not lowercase).
  */
