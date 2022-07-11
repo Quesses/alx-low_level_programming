@@ -10,7 +10,7 @@ int main(void)
 
 	for (alph = 122; alph >= 97; alph--)
 	{
-		putchar(alp);
+		putchar(alph);
 	}
 	putchar("\n");
 	return (0);
