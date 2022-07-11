@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number, positive or negative (greater or less than zero),
+ * print_sign - prints the sign of a number,
+ * positive or negative (greater or less than ),
  * @n: the inputed digit to be checked.
  *
  * Return: 1 if greater than zero, 0 if zero and -1 if less than than zero.
