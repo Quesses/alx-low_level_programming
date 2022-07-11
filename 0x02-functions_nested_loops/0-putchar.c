@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	char *string = "_putchar";
+	char putchar[9] = "_putchar";
+	int i;
 
-	for (i = 0, string[i] = '\0', i++);
+	for (i = 0; i < 8; i++)
 	{
-		char c = *string[i];
-		_putchar ('c');
+		_putchar(putchar[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
