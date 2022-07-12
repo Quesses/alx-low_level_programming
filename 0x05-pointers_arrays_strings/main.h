@@ -7,5 +7,6 @@ void reset_to_98(int *p);
 void swap_int(int *x, int *y);
 int _strlen(char *s);
 void _puts(char *s);
+void print_rev(char *s);
 
 #endif
