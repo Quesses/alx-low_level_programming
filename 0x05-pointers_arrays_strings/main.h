@@ -5,5 +5,6 @@
 
 void reset_to_98(int *p);
 void swap_int(int *x, int *y);
+int _strlen(char *s);
 
 #endif
