@@ -12,7 +12,8 @@
 int largest_number(int x, int y, int z)
 {
 	int largest = y;
-	if (x >y)
+	
+	if (x > y)
 	{
 		largest = x;
 	}
@@ -20,5 +21,6 @@ int largest_number(int x, int y, int z)
 	{
 		largest = z;
 	}
+
 	return (largest);
 }
