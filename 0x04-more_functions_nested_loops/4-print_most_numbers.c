@@ -2,24 +2,22 @@
 #include "main.h"
 
 /**
- * main - print numbers 0 to 9, ommitting 2 and 4
+ * print_most_numbers - print numbers 0 to 9, ommitting 2 and 4
  *
  * Return: void
  */
 
-int main()
+void print_most_numbers(void)
 {
-	int a = 0;
+	char a = 48;
 
-	while (a <= 9)
+	while (a <= 57)
 	{
-		if (a != 2 $$ a != 4)
+		if (a != 50 && a != 52)
 		{
-			_putchar(a + '0');
+			putchar(a);
 		}
 		a++;
 	}
-	_putchar('\n');
-
-	return ()
+	putchar('\n');
 }
