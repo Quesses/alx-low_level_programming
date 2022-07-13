@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - prints the product of a and b
+ * mul - prints the product of a and b
+ * @a: first integer
+ * @b: second integer
  *
  * Return: returns a by b
  */
 
-int main(void)
+int mul(int a, int b)
 {
-	int mul(a; b)
-
-		return (a * b);
+	mul(a, b);
+	return (a *b);
 }
