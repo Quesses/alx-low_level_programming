@@ -9,20 +9,14 @@
 
 void more_numbers(void)
 {
-	int a, b;
+	int a;
 	int i = 0;
 
 	while (i < 10)
 	{
 		for (a = 0; a <= 14; a++)
 		{
-			b = a;
-			if (a > 9)
-			{
-				putchar('1');
-				b = a % 10;
-			}
-			putchar('0' + b);
+			printf("%d", a);
 		}
 		putchar('\n');
 		i++;
