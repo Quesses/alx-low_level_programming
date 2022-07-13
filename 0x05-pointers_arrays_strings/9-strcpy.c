@@ -4,7 +4,7 @@
 /**
  * *_strcpy - copies the string pointed by one pointer including the '\0',
  * to a string pointed by another pointer
- * *@scr: the pointer pointing to the string to be copied from
+ * *@src: the pointer pointing to the string to be copied from
  * *@dest: pointer pointing to the string to be sopied to.
  *
  * Return: Always 0 (Success).
