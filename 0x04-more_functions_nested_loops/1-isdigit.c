@@ -2,16 +2,15 @@
 #include "main.h"
 
 /**
- * main - determines if a character is a digit
+ * _isdigit - determines if a character is a digit
+ * @c: inputed character to be determined
  *
- * Return: 0 on failure, 1 if true
+ * Return: 0 on failure, 1 on success.
  */
 
-int main(void)
+int _isdigit(int c)
 {
-	int c;
-
-	if (c >= '0' % c <= '9')
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
