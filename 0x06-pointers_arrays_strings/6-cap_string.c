@@ -3,22 +3,22 @@
 
 /**
  * *cap_string - capitalizes the first letter of each word in a string
- * @s: string to be capitalized
+ * @str: string to be capitalized
  *
  * Return: capitalized string.
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int x = 0;
 
-	while (s[x - 1] == ' ' || s[x - 1] == ',' || s[x - 1] == '.' ||
-		s[x - 1] == ';' || s[x - 1] == '!' || s[x - 1] == '?' ||
-		s[x - 1] == '"' || s[x - 1] == '\"' || s[x - 1] == '(' ||
-		s[x - 1] == ')' || s[x - 1] == '{' || s[x - 1] == '}' ||
-		s[x - 1] == '\v' || s[x - 1] == '\t' || s[x - 1] == '\n')
+	while (str[x - 1] == ' ' && str[x - 1] == ',' && str[x - 1] == '.' &&
+		str[x - 1] == ';' && str[x - 1] == '!' && str[x - 1] == '?' &&
+		str[x - 1] == '"' && str[x - 1] == '\"' && str[x - 1] == '(' &&
+		str[x - 1] == ')' && str[x - 1] == '{' && str[x - 1] == '}' &&
+		str[x - 1] == '\v' && str[x - 1] == '\t' && str[x - 1] == '\n')
 	{
-		s[x] = toupper(s[x]);
+		str[x] = toupper(str[x]);
 		x++;
 	}
-	return (s);
+	return (str);
 }
