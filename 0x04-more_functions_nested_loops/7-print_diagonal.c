@@ -1,29 +1,33 @@
 #include "main.h"
 
 /**
- * main - prints diagonal lines
- * lines are made of backlashes
+ * print_diagonal - prints a diagonal line made of backlashe
+ * @n: number of lines to be printed
  *
- * Return: Always 0 (Success)
+ * Return: Nothing.
  */
-
-int main()
+void print_diagonal(int n)
 {
-	int a, b;
+	int x, y;
 
-	for (b = 1; b <= n; b++)
+	if (n > 0)
 	{
-		int a = 1;
-		do
+		x = 1;
+		while (x <= n)
 		{
-			_putchar(' ');
+			y = 0;
+			while (y < x)
+			{
+				_putchar(' ');
+				y++;
+			}
 			_putchar('\\');
 			_putchar('\n');
+			x++;
 		}
-		while (a < b);
-		a++;
 	}
-	if (n < 1)
+	else
+	{
 		_putchar('\n');
-	return (0);
-
+	}
+}

@@ -2,19 +2,23 @@
 #include "main.h"
 
 /**
- * main - prints a line
+ * print_line - prints a straight line
+ * @n: number of lines to be printed
  *
- * Return: Always 0 (Success)
+ * Return: Nothing.
  */
-
-intmain()
+void print_line(int n)
 {
-	int a;
+	int x = 0;
 
-	for (int a = 0; a < n && n > o; a++)
-	{_putchar('_');
+	while (x < n)
+	{
+		if (n <= 0)
+		{
+			_putchar('\n');
+		}
+		_putchar('_');
+		x++;
 	}
-	_putchar('n');
-
-	return (0);
+	_putchar('\n');
 }
