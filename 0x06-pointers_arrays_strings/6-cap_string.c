@@ -11,13 +11,18 @@ char *cap_string(char *str)
 {
 	int x = 0;
 
-	while (str[x - 1] == ' ' && str[x - 1] == ',' && str[x - 1] == '.' &&
-		str[x - 1] == ';' && str[x - 1] == '!' && str[x - 1] == '?' &&
-		str[x - 1] == '"' && str[x - 1] == '\"' && str[x - 1] == '(' &&
-		str[x - 1] == ')' && str[x - 1] == '{' && str[x - 1] == '}' &&
-		str[x - 1] == '\v' && str[x - 1] == '\t' && str[x - 1] == '\n')
+	while (str[x])
 	{
-		str[x] = toupper(str[x]);
+		while (!(str[x] >= 'a' && str[x] <= 'z'))
+			x++;
+		if (str[x - 1] == ' ' || str[x - 1] == ',' || str[x - 1] == '.' ||
+		str[x - 1] == ';' || str[x - 1] == '!' || str[x - 1] == '?' ||
+		str[x - 1] == '"' || str[x - 1] == '\t' || str[x - 1] == '(' ||
+		str[x - 1] == ')' || str[x - 1] == '{' || str[x - 1] == '}' ||
+		str[x - 1] == '\n' || str[x - 1] == '\v' || x == 0)
+		{
+			str[x] = toupper(str[x]);
+		}
 		x++;
 	}
 	return (str);
