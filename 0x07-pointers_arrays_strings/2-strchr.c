@@ -8,7 +8,7 @@
  *
  * Return: pointer to the located character or NULL if char not found.
  */
-char *_strchr (char *s, char c)
+char *_strchr(char *s, char c)
 {
 	char *str;
 
