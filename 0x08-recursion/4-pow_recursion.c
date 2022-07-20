@@ -14,7 +14,9 @@ int _pow_recursion(int x, int y)
 
 	if (y < 0)
 		return (-1);
-	while (y)
+	if (y == 0)
+		return (1);
+	while (y > 0)
 	{
 		result = result * x;
 		y--;
