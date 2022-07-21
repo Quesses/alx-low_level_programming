@@ -1,12 +1,14 @@
 #include "main.h"
 
+int sq_rt(int a, int b);
+
 /**
- * _sqrt_recursive - returns a natural square root of a given number
+ * _sqrt_recursion - returns a natural square root of a given number
  * @n: given integer number
  *
  * Return: square root or -1 if @n doesnot have a natural square root.
  */
-int _sqrt_recursive(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
@@ -25,6 +27,5 @@ int sq_rt(int a, int b)
 		return (-1);
 	else if (a * a == b)
 		return (a);
-	else if (a * a < b)
-		return (sq_rt(a + 1, b));
+	return (sq_rt(a + 1, b));
 }
