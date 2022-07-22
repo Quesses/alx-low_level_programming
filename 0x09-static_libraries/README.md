@@ -1,2 +1,1 @@
-# Static Libraries in C programming
-
+Exercise on static libraries in C programming
