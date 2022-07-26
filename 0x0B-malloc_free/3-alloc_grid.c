@@ -18,12 +18,12 @@ int **alloc_grid(int width, int height)
 	if (len <= 0)
 		return (NULL);
 	allocGrid = (int **)calloc(height, sizeof(int *));
-	if (array == NULL)
+	if (allocGrid == NULL)
 		return (NULL);
 	for (x = 0; x < height; x++)
 	{
 		allocGrid[x] = (int *)calloc(width, sizeof(int));
-		if (allocGrid[i] == NULL)
+		if (allocGrid[x] == NULL)
 		{
 			for (x--; x >= 0; x--)
 				free(allocGrid[x]);
