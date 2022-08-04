@@ -6,7 +6,7 @@
 /**
  * print_strings - prints strings and then a new line
  * @n: number of arguments passed
- * @separator: string to printed between strings 
+ * @separator: string to printed between strings
  *
  * Return: Nothing.
  */
