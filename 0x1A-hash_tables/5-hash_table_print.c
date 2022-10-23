@@ -12,6 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 		return;
+
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
@@ -23,7 +24,7 @@ void hash_table_print(const hash_table_t *ht)
 		}
 		while (new != NULL)
 		{
-			printf("'%s' : '%s'", new->key, new->value);
+			printf("'%s': '%s'", new->key, new->value);
 			new = new->next;
 			comma_flag = true;
 			if (new != NULL)
