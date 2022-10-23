@@ -16,15 +16,18 @@ void hash_table_print(const hash_table_t *ht)
 	for (i = 0; i < ht->size; i++)
 	{
 		new = ht->array[i];
-		while (new != NULL)
+		if (new != NULL)
 		{
 			if (comma_flag == true)
 				printf(", ");
+		}
+		while (new != NULL)
+		{
 			printf("'%s' : '%s'", new->key, new->value);
 			new = new->next;
+			comma_flag = true;
 			if (new != NULL)
 				printf(", ");
-			comma_flag = true;
 		}
 	}
 	printf("}\n");
