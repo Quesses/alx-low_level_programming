@@ -11,13 +11,13 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *newnode, *temp;
-	temp = *h;
 
 	if (h == NULL)
 		return (NULL);
 	if (idx == 0)
 		return (add_dnodeint(h, n));
 
+	temp = *h;
 	while (idx > 1)
 	{
 		temp = temp->next;
